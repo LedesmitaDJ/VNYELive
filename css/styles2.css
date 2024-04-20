@@ -1,0 +1,75 @@
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+
+.table {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.center {
+    margin: 0;
+    position: center;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    text-align: center;
+}
+
+#video {
+    display: flex;
+}
+
+.iconos-sociales img {
+    transition: all 0.5s ease-out;
+}
+
+.iconos-sociales img:hover {
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    transform: translate(0px, -5px);
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+
+    thead {
+        display: flex;
+    }
+
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+
+    tr td:first-child {
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    tbody td {
+        display: flex;
+        text-align: center;
+    }
+
+    tbody td:before {
+        content: attr(data-th);
+        display: flex;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    table {
+        display: auto;
+        position: auto;
+        overflow-x: auto;
+    }
+
+}
